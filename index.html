@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Event Handling</title>
+	<script>
+		window.onload=function()
+		{
+			alert("page is loaded")
+			
+			function click()
+			{
+				document.getElementById("k1").style.color="red";
+				document.getElementById("k1").style.fontSize="90px";
+				
+				alert("clicked")
+			}
+			
+			
+			var a = document.getElementById("k1")
+			a.attachEvent("onclick",click())
+			//a.detachEvent("onclick",click())
+			
+			
+			
+			
+			
+			
+			
+		}
+	</script>
+</head>
+<body>
+	<h1 id="k1">Good Morning</h1>
+</body>
+</html>
+		
